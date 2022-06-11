@@ -37,15 +37,16 @@ public class ExamportalApplication implements CommandLineRunner {
 		System.out.println("starting code");
 	
 		User user=new User();
-		user.setFirstName("aelis");
-		user.setLastName("patel");
-		user.setUsername("aelis123");
-		user.setPassword(this.bCryptPasswordEncoder.encode("abc"));
-		user.setEmail("abc@gmail.com");
+		user.setFirstName("Aelis");
+		user.setLastName("Patel");
+		user.setUsername("AelisPatel");
+		user.setPhone("9685747485");
+		user.setPassword(this.bCryptPasswordEncoder.encode("AelisPatel"));
+		user.setEmail("asp.ce123@gmail.com");
 		user.setProfile("default.png");
 		
 		Role role1=new Role();
-		role1.setRoleId(44L);
+		role1.setRoleId(50L);
 		role1.setRoleName("ADMIN");
 		
 		Set<UserRole> userRoleSet=new HashSet<>();

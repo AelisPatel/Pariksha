@@ -55,4 +55,10 @@ public class QuestionServiceImpl implements QuestionService {
 		this.questionRepository.delete(question);
 	}
 
+	@Override
+	public Question get(Long questionsId) {
+		// TODO Auto-generated method stub
+		return this.questionRepository.getOne(questionsId);
+	}
+
 }
